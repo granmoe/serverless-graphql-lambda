@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "serverless offline start"
+  },
   "prettier": {
     "semi": false,
     "bracketSpacing": true,
@@ -44,6 +47,7 @@
   },
   "dependencies": {
     "apollo-server-lambda": "^2.4.0",
+    "graphql": "^14.1.1",
     "serverless": "^1.37.1"
   }
 }
