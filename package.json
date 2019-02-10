@@ -1,0 +1,49 @@
+{
+  "name": "sls-gql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "prettier": {
+    "semi": false,
+    "bracketSpacing": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "xo": {
+    "extends": "xo",
+    "prettier": true,
+    "space": true,
+    "rules": {
+      "no-void": "off",
+      "no-unused-vars": [
+        "error",
+        {
+          "varsIgnorePattern": "^_",
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "no-unused-expressions": [
+        "error",
+        {
+          "allowShortCircuit": true
+        }
+      ]
+    },
+    "global": [
+      "describe",
+      "test",
+      "xtest",
+      "expect",
+      "jest"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4",
+    "serverless-offline": "^4.3.0",
+    "xo": "^0.24.0"
+  },
+  "dependencies": {
+    "apollo-server-lambda": "^2.4.0",
+    "serverless": "^1.37.1"
+  }
+}
