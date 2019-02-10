@@ -13,32 +13,8 @@
     "trailingComma": "all"
   },
   "xo": {
-    "extends": "xo",
     "prettier": true,
-    "space": true,
-    "rules": {
-      "no-void": "off",
-      "no-unused-vars": [
-        "error",
-        {
-          "varsIgnorePattern": "^_",
-          "argsIgnorePattern": "^_"
-        }
-      ],
-      "no-unused-expressions": [
-        "error",
-        {
-          "allowShortCircuit": true
-        }
-      ]
-    },
-    "global": [
-      "describe",
-      "test",
-      "xtest",
-      "expect",
-      "jest"
-    ]
+    "space": true
   },
   "devDependencies": {
     "prettier": "^1.16.4",
